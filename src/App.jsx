@@ -4,7 +4,7 @@ import ChatArea from './components/Chat/ChatArea';
 import {io} from "socket.io-client";
 
 function App() {
-  const socket = useMemo(() => io("https://chat-app-rose-five-34.vercel.app/"), []);
+  const socket = useMemo(() => io("https://chat-app-lkaw.onrender.com"), []);
 
   const [joined, setJoined] = useState(false);
   const [room, setRoom] = useState('');

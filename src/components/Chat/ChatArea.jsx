@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 
 const ChatArea = ({ room }) => {
 
-  const socket = useMemo(() => io("https://chat-app-rose-five-34.vercel.app/"), []);
+  const socket = useMemo(() => io("https://chat-app-lkaw.onrender.com"), []);
 
 
   const [messages, setMessages] = useState([]);

@@ -5,7 +5,7 @@ import ScrollingTitle from '../MusicUI/ScrollingTitle';
 import { io, Socket } from 'socket.io-client';
 
 const SaavnMusicPlayer = ({room}) => {
-  const socket = useMemo(() => io("https://chat-app-rose-five-34.vercel.app/"), []);
+  const socket = useMemo(() => io("https://chat-app-lkaw.onrender.com"), []);
 
   const [query, setQuery] = useState('');
   const [songs, setSongs] = useState([]);
