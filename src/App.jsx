@@ -4,7 +4,7 @@ import ChatArea from './components/Chat/ChatArea';
 import {io} from "socket.io-client";
 
 function App() {
-  const socket = useMemo(() => io("http://localhost:4000"), []);
+  const socket = useMemo(() => io("https://chat-app-rose-five-34.vercel.app/"), []);
 
   const [joined, setJoined] = useState(false);
   const [room, setRoom] = useState('');
@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="h-[92vh]  w-full flex items-center justify-center bg-gradient-to-br from-purple-300 via-pink-200 to-white px-2 py-4">
+    <div className="h-[92vh] md:h-[100vh] w-full flex items-center justify-center bg-gradient-to-br from-purple-300 via-pink-200 to-white px-2 py-4">
       {!joined ? (
         <div className="bg-white rounded-xl shadow-xl p-6 w-full max-w-sm space-y-4 text-center">
           <h2 className="text-2xl font-bold text-purple-700">🎧 Join Music Room</h2>

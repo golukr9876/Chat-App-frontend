@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 
 const ChatArea = ({ room }) => {
 
-  const socket = useMemo(() => io("http://localhost:4000"), []);
+  const socket = useMemo(() => io("https://chat-app-rose-five-34.vercel.app/"), []);
 
 
   const [messages, setMessages] = useState([]);
