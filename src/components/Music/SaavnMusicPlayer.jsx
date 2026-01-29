@@ -33,7 +33,7 @@ const SaavnMusicPlayer = ({room}) => {
       if (!query) return;
       setIsLoading(true);
       try {
-        const res = await fetch(`https://saavn.dev/api/search/songs?query=${encodeURIComponent(query)}`);
+        const res = await fetch(`https://saavn.sumit.co/api/search/songs?query=${encodeURIComponent(query)}`);
         const data = await res.json();
         if (data.data.results.length > 0) {
           setSongs(data.data.results);
